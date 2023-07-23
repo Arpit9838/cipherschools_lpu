@@ -2,7 +2,6 @@
 using namespace std;
 
 // we achieve this using something called a "class"
-
 class student{   //class is user-defined data type
 	public:
 		string name;
@@ -22,7 +21,9 @@ class vehicle{
 int main(){
 	//there are a class of 30 students and each student has the following data associated with him
 	student a,b,c;  //a,b,c are objects of student class, they are of type student
-	
+	        
+	int d,e,f; //here d,e,f are of type int
+	//here are objects of the particulat class
 	vehicle hyundhi, ferari, suzuki;
 	
 	return 0;
