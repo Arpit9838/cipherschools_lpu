@@ -3,6 +3,7 @@ using namespace std;
 
 class Student{
 	public:
+		//what is public ??
 		string name;
 		int attendance;
 		float total_marks;
@@ -12,6 +13,7 @@ class Student{
 		}
 };
 
+//you are making a software for a bank
 class bank_client{
 	private:
 		int credit_no;
@@ -21,19 +23,38 @@ class bank_client{
 	public:
 		string name;
 		string user_name;
-		
+	
+	//we use public function to set private data
+	
+	// Private members are accessbile inside class AND ONLY INSIDE THE CLASS
+	
+	//****to access stuff of an object you definetly need a public element, as private element of an object are always inacessible	
 		void set_credit_card_no(int number){
 			credit_no = number;
+			
 		}
 		
-		void get_credit_card_no(){
+		int get_credit_card_no(){
 			cout<<"credit card number is "<<credit_no;
-		}	
+			return credit_no;
+		}
+		
+		void set_alltthestuffatonce (int number,  int User_name, int pass)
+{
+credit_no = number;
+name = name;
+password = pass;
+}
 };
+
+//We use get functions to get the data
+
+// We use set functions to se tthe data
 
 int main(){
 //	Student a,b,c;
-//	
+//	student is the class
+// and a,b,c are the objects of that template
 //	a.name = "rohit";
 //	a.attendance = 90;
 //	a.total_marks = 69;
