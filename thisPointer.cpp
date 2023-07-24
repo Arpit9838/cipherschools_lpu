@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-//you are making a software for a bank
+
+
 class bank_client{
 	private:
 		int credit_no;
@@ -10,37 +11,17 @@ class bank_client{
 	public:
 		string name;
 		string user_name;
-	
-	//we use public function to set private data
-	
-	// Private members are accessbile inside class AND ONLY INSIDE THE CLASS
-	
-	//****to access stuff of an object you definetly need a public element, as private element of an object are always inacessible	
-		void set_credit_card_no(int credit_no){
-			this->credit_no = credit_no;
-		// The pointer to the object is inherently passed bya pointer called "this"	
-		cout<<"the address of the object calling this function is "<<this<<endl;
+		
+		void set_credit_card_no(int number){
+//			credit_no = number;
+			this->credit_no = number;
+			cout<<"the address of instance is "<<this<<endl;
 		}
 		
-		int get_credit_card_no(){
-			cout<<"credit card number is "<<credit_no;
-			return credit_no;
-		}
-		
-		
-		void set_alltthestuffatonce (int credit_no,  int name, int password)
-{
-   this->credit_no = credit_no;
-this->name = name;
-this->password = password;
-}
-
-// Every object when we define a function, inherently passes the pointer of the object and the pointer is called !"this"
+		void get_credit_card_no(){
+			cout<<"credit card number is "<<credit_no<<endl;
+		}	
 };
-
-//We use get functions to get the data
-
-// We use set functions to se tthe data
 
 int main(){
 
@@ -53,10 +34,10 @@ int main(){
 	
 //	cout<<"The password of rohit is: "<<a.password;
 	
-	a.set_credit_card_no(983593);
-	// In this function, other than the parameters of the funcion, we also pass the pointer  of the object of this calss, ans the pointer is refferd to by "this
-	//a.get_credit_card_no();
-	cout<<"the address of this object is"<<&a<<endl;
-a.credit_no;
+	a.set_credit_card_no(124879);
+	a.get_credit_card_no();
+	
+	cout<<"the address of instance is "<<&a;
+	
 	return 0;
 }
